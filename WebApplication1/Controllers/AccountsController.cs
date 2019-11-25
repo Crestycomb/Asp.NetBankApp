@@ -28,12 +28,13 @@ namespace WebApplication1.Controllers
             return _accounts;
         }
 
-        /*
+        
         [HttpPost]
-        public something<> Post()
+        public ActionResult Post([FromBody] double amount)
         {
-
+            _accounts.Add(new Account(amount));
+            return Ok();
         }
-        */
+        
     }
 }
